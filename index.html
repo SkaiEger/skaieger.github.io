@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>PizzaHUB</title>
+</head>
+<body>  
+    <div class="headers">
+        <div class="header-text">
+            <h2 class="nametext">Pizza</h2>    
+            <h2 class="nametext2">HUB</h2>
+            <a href="#openModal">
+                <img class="cart-shop"  src="img/icons8-корзина-48.png">
+            </a>
+            
+        </div>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Корзина</h3>
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">    
+                    <div class="card mb-4 container item ">
+                        <div class="card-body">
+                            <h2 class="card-title  ">Ваш заказ</h4>
+                    
+                            <!-- cart-wrapper -->
+                            <div class="cart-wrapper">
+                    
+                            </div>
+                            <!-- // cart-wrapper -->
+                    
+                            <!-- Стоимость заказа -->
+                            <div class="cart-total  text-cart">
+                                <p><span class="h3">Итого:</span>
+                                    <span class="total-price">0</span>
+                                    <span class="rouble">₽</span></p>
+                            </div>
+                            <!-- // Стоимость заказа -->
+                    
+                        </div>
+                    
+                        <!-- Оформить заказ -->
+                        <div id="order-form" class="card-body border-top none container">
+                            <h4 class="card-title ">Оформить заказ</h4>
+                                <div class="">
+                                    <button type="submit" id="btn1" class="btn  btn-primary ">Заказать</button>
+                                </div>
+                        </div>
+                        <!-- // Оформить заказ -->
+                    
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div> 
+
+  
+    <div class="container">   
+        <div class="inner card-body">
+            <div class="card item" data-id="01">
+                <img class="product-img" src="/img/papperoni.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Пеперони</h3>
+                    <p class="price__weight ptext1"> пепперони, моцарелла, <br> пармезан, томатный соус</p>
+                    <h3 class="price__currency ptext1"> 799р</h3>
+
+                <div class="details-wrapper ">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                    <button data-cart  href="cart.html" class="btn btn-cart">В корзину</button>
+            </div>
+            <div class="card item" data-id="02">
+                <img class="product-img" src="/img/supepPapperoni.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> SUPER Пеперони</h3>    
+                    <p class="price__weight ptext1"> двойная порция пепперони, чили, пармезан, моцарелла, томатный соус</p>
+                    <h3 class="price__currency ptext1"> 849р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">В корзину</button>
+            </div>
+            <div class="item card" data-id="03">
+                <img class="product-img" src="/img/syirnaya.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Сырная пицца</h3>
+                    <p class="price__weight ptext1"> соус бьянка, моцарелла</p>
+                    <h3 class="price__currency ptext1"> 649р</h3>    
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="04">
+                <img class="product-img" src="/img/4chezz.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> 4 сыра</h3>
+                <p class="price__weight ptext1"> пармезан, чеддер, горгонзола с голубой плесенью, моцарелла, соус бьянка</p>
+                <h3 class="price__currency ptext1"> 799р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="05">
+                <img class="product-img" src="/img/menshemiasa.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Грибной бекон</h3>
+                <p class="price__weight ptext1"> бекон, пепперони, ветчина, свежие<br> шампиньоны, сливочный соус, моцарелла</p>
+                <h3 class="price__currency ptext1"> 859р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="06">
+                <img class="product-img" src="/img/misobomb.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Бостон против Майами</h3>
+                <p class="price__weight ptext1"> пепперони, копчёная курица, охотничьи <br>колбаски, томатный соус, моцарелла</p>
+                <h3 class="price__currency ptext1"> 899р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="07">
+                <img class="product-img" src="/img/grib.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Грибная пицца</h3>
+                <p class="price__weight ptext1"> свежие грибы, шиитаке, соус, моцарелла</p>
+                <h3 class="price__currency ptext1"> 659р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="08">
+                <img class="product-img" src="/img/gavai.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Гавайи</h3>
+                <p class="price__weight ptext1"> свежие ананасы, панированное куриное <br>филе, соус бьянка и соус "сладкий чили"</p>
+                <h3 class="price__currency ptext1"> 899р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="09"">
+                <img class="product-img" src="/img/ostrai.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Дракоша</h3>
+                <p class="price__weight ptext1"> халапеньо, курица в панировке, <br> курица с кавказскими специями и карри, <br> сыр чеддер, сыр моцарелла, хлопья чили, красный лук, зелёный перец, томатный соус</p>
+                <h3 class="price__currency ptext1"> 899р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+            <div class="item card" data-id="10">
+                <img class="product-img" src="/img/fish.jpg" alt="name tovar" class="img">
+                <h3 class=" item-title ptext1"> Лососось</h3>
+                <p class="price__weight ptext1"> лосось, томаты, базилик,<br> моцарелла, сливочный соус</p>
+                <h3 class="price__currency ptext1"> 1159р</h3>
+
+                <div class="details-wrapper">
+                    <div class="cart-btn counter-wrapper" id="cart-btn">
+                        <button class="btn1 btn_minus items__control" data-action="minus"> - </button>
+                        <div class="cart-counter items__current" data-counter>1</div>
+                        <button class="btn1 btn_plus items__control" data-action="plus"> + </button>
+                        <br>
+                    </div>
+                </div>
+
+                <button data-cart type="button" class="btn btn-block btn-outline-warning" id="btn-cart1">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/counter.js"></script> 
+    <script src="js/calcCartPrice.js"></script>
+</body>
+</html>
